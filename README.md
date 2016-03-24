@@ -1,4 +1,4 @@
-# Concaria
+﻿# Concaria
 
 This is a sample application demonstrating the Xively platform.
 
@@ -6,7 +6,7 @@ This is a sample application demonstrating the Xively platform.
 
 The simplest and recommended method of installation is through Heroku. Simply click the button below.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/xively/concaria/tree/build)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/xively/concaria/tree/features/xs-447-build)
 
 ### Local Installation
 
