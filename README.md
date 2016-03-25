@@ -6,7 +6,7 @@ This is a sample application demonstrating the Xively platform.
 
 The simplest and recommended method of installation is through Heroku. Simply click the button below.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/xively/concaria/tree/build)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/xively/concaria/tree/staging-build)
 
 ### Local Installation
 
@@ -121,13 +121,13 @@ a `.env` file.
 #### Staging and Release notes
 
 Pull Requests are not to be merged into master without first being confirmed by QA.
-After your PR is reviewed, merge your PR into the `staging` branch. Then cut a new build release into `staging-build`. 
+After your PR is reviewed, merge your PR into the `staging` branch. Then cut a new build release into `staging-build`.
 
 (**NOTE:** You will have to run `grunt build` & add the public folder by force `git add public --force`)
 
 [Deploy the staging branch](https://heroku.com/deploy?template=https://github.com/xively/concaria/tree/staging-build)
 
-When a staging branch has been QA'd and no regressions are found, then you can merge your Pull Request into master. After you've done that, tag master with the lastest version #. 
+When a staging branch has been QA'd and no regressions are found, then you can merge your Pull Request into master. After you've done that, tag master with the lastest version #.
 
 ```
 git tag -a v1.1 -m "write a note about what this version includes"
