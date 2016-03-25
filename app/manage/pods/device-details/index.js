@@ -288,6 +288,10 @@ deviceDetailsModule.config([
                 .then(function(dataSource) {
                   $scope.$applyAsync(function() {
                     // Trigger data change at chartData to pass down to chart.
+                    dataSource.data = dataSource.data.length < 100 ?
+                      chartDataTool.generateSensorData(item.name, dataSource.data) :
+                      dataSource.data;
+
                     item.chartData.dataSource = angular.merge({}, item.chartData.dataSource, dataSource);
                   });
                   return item.chartData;
