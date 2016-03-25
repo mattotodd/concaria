@@ -5,7 +5,7 @@ var deviceLogService = [
   function(mqttService, uuid) {
     function createDeviceLogMessage(inputData) {
       var now = Date.now().toString();
-      var severity = inputData.severity || 'informational';
+      var severity = 'informational';
       var code = '400';
       if (severity === 'informational') {
         code = '200';
