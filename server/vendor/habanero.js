@@ -10,7 +10,7 @@ function doHabaneroLogin() {
 			  client_id: "node-red-editor",
 			  grant_type: "password",
 			  scope:"",
-			  username: process.env.XIVELY_ACCOUNT_USER_NAME
+			  username: process.env.XIVELY_ACCOUNT_USER_NAME,
 			  password: process.env.XIVELY_ACCOUNT_USER_PASSWORD,
 			  accountId: process.env.XIVELY_ACCOUNT_ID,
 			  appId: process.env.XIVELY_APP_ID,
