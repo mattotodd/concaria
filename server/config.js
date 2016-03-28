@@ -39,6 +39,9 @@ function Config(opts) {
     meta: {
       env: process.env.NODE_ENV
     },
+    habanero:{
+      domain: process.env.HABANERO_DOMAIN
+    },
     virtualdevice: {
       userInfo: {
         user: process.env.XIVELY_ACCOUNT_BROKER_USER,

@@ -4,6 +4,8 @@ var express = require('express');
 var path = require('path');
 var router = express.Router;
 
+var habanero = require('./vendor/habanero');
+
 module.exports = function(options) {
   var app = router();
 
@@ -21,6 +23,10 @@ module.exports = function(options) {
 
   app.get('/manage', function(req, res) {
     res.render('manage', config.view);
+  });
+
+  app.get('/gotoHabanero', function(req, res){
+    habanero.login(req, res);
   });
 
   // Serve up any remaining existing path as requested.
