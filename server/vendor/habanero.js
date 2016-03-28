@@ -2,7 +2,7 @@ var Promise = require('bluebird');
 var request = require('request');
 
 function doHabaneroLogin() {
-    return Promise(function(resolve, reject) {
+    return new Promise(function(resolve, reject) {
 		request({
 			url: 'https://' + process.env.HABANERO_DOMAIN + '/auth/token',
 			method: 'POST',
