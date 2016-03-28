@@ -1,8 +1,8 @@
-var when = require("when");
+var Promise = require('bluebird');
 var request = require('request');
 
 function doHabaneroLogin() {
-    return when.promise(function(resolve, reject) {
+    return Promise(function(resolve, reject) {
 		request({
 			url: 'https://' + process.env.HABANERO_DOMAIN + '/auth/token',
 			method: 'POST',
