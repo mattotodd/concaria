@@ -21,7 +21,7 @@ function doHabaneroLogin() {
 			if(err){
 				reject(err);
 			}
-			if (response.statusCode != 200) { 
+			if (httpResponse.statusCode != 200) { 
 			    console.log("Error provisioning habanero domain: "+process.evn.HABANERO_DOMAIN );
 			    console.log(JSON.stringify(response));
 			}
