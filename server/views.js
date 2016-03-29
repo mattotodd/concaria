@@ -25,7 +25,7 @@ module.exports = function(options) {
     res.render('manage', config.view);
   });
 
-  app.get('/gotoHabanero', function(req, res){
+  app.get('/gotoHabanero', function(req, res) {
     habanero.login(req, res);
   });
 

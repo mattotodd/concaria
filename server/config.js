@@ -39,7 +39,7 @@ function Config(opts) {
     meta: {
       env: process.env.NODE_ENV
     },
-    habanero:{
+    habanero: {
       domain: process.env.HABANERO_DOMAIN
     },
     virtualdevice: {
